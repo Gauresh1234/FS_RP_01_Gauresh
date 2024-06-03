@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="incrementcounter()">Increment</button>
+    <button onclick="decrementcounter()">Decrement</button>
+
+    <script>
+        document.querySelector("h1").style.color="red";
+        var counter = 0;
+        function incrementcounter(){
+        var counterElement=document.getElementById("counter");
+        counter++;
+        counterElement.innerText=(counter);
+        }
+        function decrementcounter(){
+            var counterElement=document.getElementById("counter");
+            counter--;
+            counterElement.innerText=(counter);
+        }
+
+
+    </script>
+</body>
+</html>
+
+
+    
+    
+    

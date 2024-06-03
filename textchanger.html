@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Changer</title>
+</head>
+<body>
+    <h1 id="counter">Gauresh</h1>
+    <button onclick="Changecounter()">Change</button>
+
+    <script>
+        document.querySelector("h1").style.color="Blue";
+         function Changecounter(){
+            counterElement=document.getElementById("counter");
+            counter = "Kotian";
+            counterElement.innerText=(counter);
+         }
+
+
+    </script>
+    
+</body>
+</html>
